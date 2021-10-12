@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AutentikasiController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ Route::get('/', function () {
 Route::get('/login',[AutentikasiController::class,'login'])->name('login');
 Route::post('login',[AutentikasiController::class,'loginuser'])->name('loginuser');
 
+Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
