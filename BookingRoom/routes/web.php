@@ -19,4 +19,3 @@ Route::get('/', function () {
 });
 
 Route::get('/login',[AutentikasiController::class,'login'])->name('login');
-Route::get('/register',[AutentikasiController::class,'register'])->name('register');
